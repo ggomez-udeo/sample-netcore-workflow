@@ -38,5 +38,5 @@ jobs:
 
       - name: Restart the app
         run: |
-          export XDG_RUNTIME_DIR=/run/user/$(id u)
+          export XDG_RUNTIME_DIR=/run/user/$(id -u)
           systemctl --user restart test102.service
