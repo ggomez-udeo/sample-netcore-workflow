@@ -34,7 +34,7 @@ jobs:
 
       # We will output publish files to the folder we previously created
       - name: Publish
-        run: dotnet publish -c Release -o /home/udeo/test102/app
+        run: dotnet publish -c Release -o /home/udeo/www/test102/app
 
       - name: Restart the app
         run: |
